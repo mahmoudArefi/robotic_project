@@ -1,0 +1,75 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/KukaBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.29641641340295555 -0.3119019343921739 0.9026929118962594 4.660971901802499
+  position 4.169242979691352 1.059536487474148 0.7769875830788793
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 5
+  floorAppearance Appearance {
+    texture ImageTexture {
+      url [
+        "../floarTexture.jpg"
+      ]
+    }
+    textureTransform TextureTransform {
+      scale 0.05 0.1
+    }
+  }
+}
+KukaBox {
+  translation 4.01575 0.00775287 0.000497351
+  rotation -4.5137240454956835e-11 3.952687616488225e-09 1 0.022866283254698437
+  color 0 1 0
+  size 0.06 0.06 0.001
+}
+KukaBox {
+  translation 4.22575 0.0125539 0.000497351
+  rotation -4.5137240454956835e-11 3.952687616488225e-09 1 0.022866283254698437
+  name "Kuka box(1)"
+  color 1 0 0
+  size 0.06 0.06 0.001
+}
+KukaBox {
+  translation 4.08575 0.00935335 0.000497351
+  rotation -4.5137240454956835e-11 3.952687616488225e-09 1 0.022866283254698437
+  name "Kuka box(2)"
+  color 1 1 0
+  size 0.06 0.06 0.001
+}
+KukaBox {
+  translation 4.15575 0.0109537 0.000497351
+  rotation -4.5137240454956835e-11 3.952687616488225e-09 1 0.022866283254698437
+  name "Kuka box(3)"
+  color 0 0 1
+  size 0.06 0.06 0.001
+}
+Youbot {
+  translation 4.68467 0.0110221 0.110315
+  rotation -0.0016628613118704865 -3.817171874220681e-05 0.9999986167166318 3.138323156410779
+}
+Youbot {
+  hidden rotation_3 0 -1 0 1.5700026869213806
+  hidden rotation_4 0 1 0 2.635001481530745
+  hidden rotation_5 0 -1 0 1.7800004202660935
+  translation -0.37301456549613704 0.00990775045341345 0.09832312446849248
+  rotation -0.24323852532323115 -0.9627276364005896 0.1182815197277835 0.00032686076213512107
+  name "youBot(1)"
+}
+Wall {
+  translation 0 -0.01 0
+  size 0.2 5 0.1
+}
